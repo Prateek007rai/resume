@@ -1,0 +1,161 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    /* margin: auto;
+    width: 50%; */
+    padding: 0 15px;
+  }
+
+  ul{
+    padding: 0px 30px;
+  }
+  
+  .container {
+    width: 100%; /* Adjusted to fit full width for printing */
+    margin: 10px auto;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    page-break-inside: avoid; /* Prevent container from breaking across pages */
+  }
+
+  .profile-div{
+    display: flex;
+  }
+
+  .profile-div img{
+    border-radius: 50%;
+    border: 1px solid rgb(132, 127, 127);
+  }
+  
+  .section-title {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 1px;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 1px;
+  }
+  
+  .job-heading, .education-heading, .project-heading {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .job-details, .education-details, .project-details {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .education-details{
+    margin: -5px 0px -10px;
+  }
+
+  .job-details div{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+  }
+   
+  .award-details{
+    margin-top: -5px;
+    padding-left: 0px;
+    margin-bottom: 18px;
+  }
+  .award-details li{
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    font-size: 12px;
+  }
+  
+  .job-details ul{
+    margin-top: -10px;
+  }
+  .job-details .company-para{
+    margin-top: -10px;
+  }
+  .job-details div h5{
+    margin-left: 10px;
+    margin-top: 18px;
+  }
+  
+  /* skills css */
+  .skills {
+    margin-bottom: 10px;
+    font-size: 12px;
+    padding-left: 30px;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .skills-list li {
+    width: 24%; 
+    padding: 2px 0;
+  }
+  /* ends */
+  
+  /* contact css */
+  .contact-info {
+    margin-bottom: 5px;
+    width: fit-content;    
+    text-align: center;
+    margin-left: 10px;
+    margin: auto;
+    margin-top: -10px;
+  }
+
+  .contact-info h1{
+    margin-bottom: 5px;
+  }
+
+  .contact-div{
+   display: flex;
+   height: fit-content;
+   margin-top: -10px;
+   margin-bottom: -5px;
+  }
+
+  .contact-div h2{
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+
+  .contact-div h2 a{
+    color: black;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+    font-size: 12px;
+  }
+  
+  .contact-info a {
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  /* ends */
+  
+  .education-details{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+
+  /* project css */
+  .project-para{
+    margin-top: -5px;
+  }
+
+
+@media print {
+  head, title, meta {
+    display: none !important;
+  }
+}
